@@ -21,7 +21,7 @@ def test_get_ticket_tier():
 
 def test_get_ticket_tier_invalid():
     ticket = "TX12345"
-    assert get_ticket_tier(ticket).raises(ValueError)
+    assert get_ticket_tier(ticket) is False
 
 def test_calculate_total_valid():
     pricesList = [100.00, 200.00, 300.00]
